@@ -1,59 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Nos Produits</a>
+</nav>
+<router-outlet></router-outlet>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP1 | Vanilla JS</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-    <nav class="ui secondary  menu">
-        <div class="item">
-            Rest API | Native JS
-        </div>
-        <a class="active item">
-            Lecture
-        </a>
-        <a class="item">
-            Ecriture
-        </a>
-    </nav>
-    <main class="ui container">
-        <form class="ui form" id="search-form">
-            <div class="field">
-                <label for="el-name">Search element</label>
-                <input type="text" name="el-name" id="el-name" placeholder="Element name">
-            </div>
-            <button class="ui primary button" type="submit">Search</button>
-        </form>
-
-        <table class="ui striped table" id="result">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Date Ajout</th>
-                    <th scope="col">Date MAJ</th>
-                    <th scope="col">Prix</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                  
-            </tbody>
-        </table>
-    </main>
-</body>
-
-</html>
